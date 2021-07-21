@@ -13,7 +13,7 @@ class NavigationButton extends React.Component<NavigationButtonProps> {
     render() {
         const classes = this.props.classes
         return (
-            <Button href={this.props.path} style={{ margin: '8px' }} className={(this.props.selected ? classes.selected : classes.unselected)} >
+            <Button disableRipple={true} href={this.props.path} style={{ margin: '8px' }} className={(this.props.selected ? classes.selected : classes.unselected)} >
                 {this.props.title}
             </Button>
         )

@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery';
 import React from 'react';
 import NavigationBar from './pages/components/navigation/NavigationBar';
 import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
+import TitleBar from './pages/components/title/TitleBar';
 
 interface AppProps extends WithStyles<typeof styles> {
 
@@ -19,6 +20,7 @@ class App extends React.Component<AppProps> {
     return (
       <div>
         <BrowserRouter>
+          <TitleBar />
           <Route render={(props) => <NavigationBar {...props} />} />
           <Switch>
             <Route path="/" component={Home} exact />
