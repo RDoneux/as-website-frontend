@@ -1,0 +1,17 @@
+.container {
+    align-self: center;
+}
+
+.contents {
+    color     : darkgray;
+    align-self: center;
+    font-size : 1.2vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    .contents {
+        font-size: 10px;
+    }
+}
