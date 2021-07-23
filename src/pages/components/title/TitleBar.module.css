@@ -41,7 +41,7 @@
 
 .email {
     color        : #dabd47;
-    font-size    : 15vi;
+    font-size    : 1.5vw;
     margin-bottom: 5px;
     align-self   : flex-end;
 }
@@ -57,7 +57,7 @@
 .tel {
     margin-top: 0px;
     color     : #dabd47;
-    font-size : 15px;
+    font-size : 1.5vw;
     align-self: flex-end;
 }
 
