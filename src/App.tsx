@@ -17,17 +17,21 @@ class App extends React.Component<AppProps> {
 
   render() {
     return (
-      <div style={{padding: '0px', margin: '0px', display: 'flex',flexGrow: 1, flexFlow: 'column', height: '100vh'}}>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
         <BrowserRouter>
-          <TitleBar />
-          <Route render={(props) => <NavigationBar {...props} />} />
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/about-us" component={AboutUs} exact />
-            <Route path="/gallery" component={Gallery} exact />
-            <Route path="/testimonies" component={Testimonies} exact />
-            <Route path="/contact" component={Contact} exact />
-          </Switch>
+          <div style={{ height: '20vh' }}>
+            <TitleBar />
+            <Route render={(props) => <NavigationBar {...props} />} />
+          </div>
+          <div style={{ flexGrow: 1 }}>
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/about-us" component={AboutUs} exact />
+              <Route path="/gallery" component={Gallery} exact />
+              <Route path="/testimonies" component={Testimonies} exact />
+              <Route path="/contact" component={Contact} exact />
+            </Switch>
+          </div>
         </BrowserRouter>
       </div>
     );

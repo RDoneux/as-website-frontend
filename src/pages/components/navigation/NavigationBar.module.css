@@ -1,7 +1,7 @@
 .container {
     background     : #c5c2c2;
-    height         : 50px;
-    min-height     : 50px;
+    height         : 30%;
+    min-height     : 30%;
     box-shadow     : 1px 1px 10px black;
     display        : flex;
     justify-content: flex-end;

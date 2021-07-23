@@ -18,6 +18,13 @@ class AboutUs extends React.Component<AboutUsProps> {
                     <ExpandableInformation />
                     <ExpandableInformation />
                     <ExpandableInformation />
+                    <ExpandableInformation />
+                    <ExpandableInformation />
+                    <ExpandableInformation />
+                    <ExpandableInformation />
+                    <ExpandableInformation />
+                    <ExpandableInformation />
+
                 </div>
             </div>
         )
