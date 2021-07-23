@@ -8,6 +8,7 @@ import React from 'react';
 import NavigationBar from './pages/components/navigation/NavigationBar';
 import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
 import TitleBar from './pages/components/title/TitleBar';
+import Signature from './pages/components/title/Signature';
 
 interface AppProps extends WithStyles<typeof styles> {
 
@@ -29,7 +30,9 @@ class App extends React.Component<AppProps> {
             <Route render={(props) => <NavigationBar {...props} />} />
           </div>
           <div style={{
-            height: '80vh',
+            //height: '80vh',
+            minHeight: '69vh',
+            paddingBottom: '2.5rem',
             userSelect: 'none',
           }}>
             <Switch>
@@ -41,6 +44,7 @@ class App extends React.Component<AppProps> {
             </Switch>
           </div>
         </BrowserRouter>
+        <Signature />
       </div>
     );
   }
