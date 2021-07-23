@@ -1,0 +1,22 @@
+.container {
+    background     : #c5c2c2;
+    height         : 50px;
+    min-height     : 50px;
+    box-shadow     : 1px 1px 10px black;
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    align-self     : center;
+    margin-right   : 20px;
+    flex-wrap      : wrap;
+    display        : flex;
+    justify-content: 'flex-end';
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        margin-right: 0px;
+    }
+}
