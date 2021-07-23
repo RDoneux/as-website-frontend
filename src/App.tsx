@@ -1,7 +1,6 @@
-import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
+import AboutUs from './pages/about/AboutUs';
 import Testimonies from './pages/Testimonies';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
@@ -18,7 +17,7 @@ class App extends React.Component<AppProps> {
 
   render() {
     return (
-      <div>
+      <div style={{padding: '0px', margin: '0px', display: 'flex',flexGrow: 1, flexFlow: 'column', height: '100vh'}}>
         <BrowserRouter>
           <TitleBar />
           <Route render={(props) => <NavigationBar {...props} />} />
