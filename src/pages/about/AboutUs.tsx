@@ -1,5 +1,5 @@
 import React from 'react'
-import MainImage from '../../assets/about-us/About_Us_Main_Image.jpg'
+import MainImage from '../../assets/about-us/About_Us_Main_Image.png'
 import ExpandableInformation from './ExpandableInformation'
 import Styles from './AboutUs.module.css'
 

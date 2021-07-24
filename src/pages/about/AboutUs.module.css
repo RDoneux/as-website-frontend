@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    height : 100%;
+    min-height : 77vh;
 }
 
 .main_image {
@@ -32,11 +32,9 @@
     }
 
     .main_image {
-        /* min-width : 60vw; */
         display     : block;
         min-height  : 25vh;
-        min-width   : 25vh;
-        aspect-ratio: 1;
+        min-width   : 28vh;
         align-self  : center;
     }
 

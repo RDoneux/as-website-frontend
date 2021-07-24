@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home';
 import AboutUs from './pages/about/AboutUs';
 import Testimonies from './pages/Testimonies';
-import Contact from './pages/Contact';
+import Contact from './pages/contact/Contact';
 import Gallery from './pages/Gallery';
 import React from 'react';
 import NavigationBar from './pages/components/navigation/NavigationBar';
@@ -30,9 +30,7 @@ class App extends React.Component<AppProps> {
             <Route render={(props) => <NavigationBar {...props} />} />
           </div>
           <div style={{
-            //height: '80vh',
-            minHeight: '69vh',
-            paddingBottom: '2.5rem',
+            minHeight: '77vh',
             userSelect: 'none',
           }}>
             <Switch>
