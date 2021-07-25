@@ -1,10 +1,12 @@
 .container {
-    display: flex;
-    min-height : 77vh;
+    display   : flex;
+    min-height: 77vh;
 }
 
 .main_image {
     margin       : 20px;
+    margin-left  : 5vw;
+    margin-right : 5vw;
     margin-bottom: 0px;
     height       : 80%;
     max-width    : 35vw;
@@ -32,10 +34,10 @@
     }
 
     .main_image {
-        display     : block;
-        min-height  : 25vh;
-        min-width   : 28vh;
-        align-self  : center;
+        display   : block;
+        min-height: 25vh;
+        min-width : 28vh;
+        align-self: center;
     }
 
     .information_wrapper {

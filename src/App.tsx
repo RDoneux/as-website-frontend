@@ -20,18 +20,24 @@ class App extends React.Component<AppProps> {
     return (
       <div style={{
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        position: 'relative',
+        minHeight: '100vh',
       }}>
         <BrowserRouter>
           <div style={{
+            minHeight: '20vh',
             height: '20vh',
           }}>
             <TitleBar />
             <Route render={(props) => <NavigationBar {...props} />} />
           </div>
           <div style={{
-            minHeight: '77vh',
+            minHeight: '65vh',
+            display: 'flex',
+            justifyContent: 'center',
             userSelect: 'none',
+            paddingBottom: '2.5rem',
           }}>
             <Switch>
               <Route path="/" component={Home} exact />
@@ -41,8 +47,12 @@ class App extends React.Component<AppProps> {
               <Route path="/contact" component={Contact} exact />
             </Switch>
           </div>
+          <div style={{
+            minHeight: '10vh',
+          }}>
+            <Signature />
+          </div>
         </BrowserRouter>
-        <Signature />
       </div>
     );
   }

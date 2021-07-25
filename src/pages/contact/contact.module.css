@@ -1,0 +1,33 @@
+.container {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-self     : center;
+}
+
+.title {
+    justify-self : center;
+    align-self   : center;
+    text-align   : center;
+    margin       : 20px;
+    margin-bottom: 0px;
+}
+
+.form {
+    align-self    : center;
+    justify-self  : flex-start;
+    display       : flex;
+    width         : 60vw;
+    /* height     : 60vh; */
+    flex-direction: column;
+    /* margin-top : 20px; */
+}
+
+.textfield fieldset {
+
+    border-radius: 30px;
+}
+
+.textfield_query fieldset {
+    border-radius: 30px;
+}
