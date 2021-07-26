@@ -11,6 +11,7 @@
     text-align   : center;
     margin       : 20px;
     margin-bottom: 0px;
+    font-size: 20px;
 }
 
 .form {
@@ -18,9 +19,7 @@
     justify-self  : flex-start;
     display       : flex;
     width         : 60vw;
-    /* height     : 60vh; */
     flex-direction: column;
-    /* margin-top : 20px; */
 }
 
 .textfield fieldset {

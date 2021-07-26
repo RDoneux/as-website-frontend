@@ -23,7 +23,9 @@
 }
 
 .signature {
-    min-height: 10vh;
-    min-height: calc(var(--vh, 1vh) * 10);
+    /* min-height: 10vh; */
+    /* min-height: calc(var(--vh, 1vh) * 10); */
     text-align: center;
+    margin: 10px;
+
 }
