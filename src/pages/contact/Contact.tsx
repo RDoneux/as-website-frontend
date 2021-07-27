@@ -1,6 +1,7 @@
 import { TextField } from '@material-ui/core'
 import React from 'react'
 import Styles from './contact.module.css'
+import Submit from './Submit'
 
 interface ContactProps {
 
@@ -14,7 +15,8 @@ class Contact extends React.Component<ContactProps> {
                 <p
                     className={Styles.title}
                 >
-                    Please complete the form below and we will be in contact as soon as we can. <br /> <br /> Alternitively you can call or email us directly using the details above 
+                    Please complete the form below and we will be in contact as soon as we can. <br /> <br />
+                    Alternitively you can call or email us directly using the details above
                 </p>
                 <form action="/action_page.php" className={Styles.form} noValidate autoComplete="on">
                     <div style={{ height: '5vh' }} />
@@ -24,6 +26,7 @@ class Contact extends React.Component<ContactProps> {
                     <div style={{ height: '20px' }} />
                     <TextField className={Styles.textfield_query} label="Query" size={'small'} multiline minRows={7} variant="outlined" />
                 </form>
+                <Submit />
             </div>
         )
     }
