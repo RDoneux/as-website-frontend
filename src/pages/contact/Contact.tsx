@@ -1,4 +1,4 @@
-import { TextField } from '@material-ui/core'
+import { TextField, FormControl } from '@material-ui/core'
 import React from 'react'
 import Styles from './contact.module.css'
 import Submit from './Submit'
@@ -20,11 +20,11 @@ class Contact extends React.Component<ContactProps> {
                 </p>
                 <form action="/action_page.php" className={Styles.form} noValidate autoComplete="on">
                     <div style={{ height: '5vh' }} />
-                    <TextField className={Styles.textfield} label="Name" variant="outlined" />
+                    <TextField label="Name" variant="outlined" />
                     <div style={{ height: '20px' }} />
-                    <TextField className={Styles.textfield} label="Email Address" variant="outlined" />
+                    <TextField label="Email Address" variant="outlined" />
                     <div style={{ height: '20px' }} />
-                    <TextField className={Styles.textfield_query} label="Query" size={'small'} multiline minRows={7} variant="outlined" />
+                    <TextField label="Query" size={'small'} multiline minRows={7} variant="outlined" />
                 </form>
                 <Submit />
             </div>

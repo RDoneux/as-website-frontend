@@ -22,11 +22,8 @@
     flex-direction: column;
 }
 
-.textfield fieldset {
-
-    border-radius: 30px;
-}
-
-.textfield_query fieldset {
-    border-radius: 30px;
+@media screen and (max-width: 400px) {
+    .form {
+        width: 80vw;
+    }
 }
