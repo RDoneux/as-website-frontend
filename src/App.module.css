@@ -1,31 +1,40 @@
 .container {
- display: flex;
- flex-direction: column;
- position: relative;
- min-height: 100vh;
- min-height: calc(var(--vh, 1vh) * 100);
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+    height        : 100%;
+    min-height    : 100vh;
+    min-height    : calc(var(--vh, 1vh) * 100);
+    /* background-image: linear-gradient(to left,
+            #747474, #d3d3d3) */
+            background: #d3d3d3;
 }
+
+/* @media screen and (max-width: 400px) {
+    .container {
+        background-image: linear-gradient(to top,
+                #747474, #d3d3d3)
+    }
+} */
 
 .title {
     min-height: 20vh;
     min-height: calc(var(--vh, 1vh) * 20);
-    height: 20vh;
-    height: calc(var(--vh, 1vh) * 20);
+    height    : 20vh;
+    height    : calc(var(--vh, 1vh) * 20);
 }
 
 .content {
-    min-height: 70vh;
-    min-height: calc(var(--vh, 1vh) * 70);
-    display: flex;
+    min-height     : 75vh;
+    min-height     : calc(var(--vh, 1vh) * 75);
+    display        : flex;
     justify-content: center;
-    user-select: none;
-    padding-bottom: 2.5rem;
+    user-select    : none;
 }
 
-.signature {
-    /* min-height: 10vh; */
-    /* min-height: calc(var(--vh, 1vh) * 10); */
-    text-align: center;
-    margin: 10px;
-
+.end {
+    display: flex;
+    flex: 1;
+    min-height: 5vh;
+    min-height: calc(var(--vh, 1vh) * 5);
 }

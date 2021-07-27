@@ -2,7 +2,7 @@
     display                   : flex;
     justify-content           : space-between;
     transform                 : translate(-80%, 0px);
-    width                     : 85%;
+    max-width                     : 85%;
     text-align                : center;
     position                  : relative;
     transition-property       : transform;

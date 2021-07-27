@@ -1,10 +1,13 @@
 .contents {
-    color       : darkgray;
+    color       : black;
     align-self  : center;
     justify-self: center;
     font-size   : 1.2vw;
+    text-align  : center;
     margin      : 0px;
     padding     : 0px;
+    width       : 100%;
+    bottom      : 0px;
 }
 
 @media screen and (max-width: 400px) {

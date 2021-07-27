@@ -32,33 +32,13 @@ class App extends React.Component<AppProps> {
     };
 
     return (
-      <div className={Styles.container}
-      // style={{
-      //   display: 'flex',
-      //   flexDirection: 'column',
-      //   position: 'relative',
-      //   minHeight: '100vh',
-      // }}
-      >
+      <div className={Styles.container}>
         <BrowserRouter>
-          <div className={Styles.title}
-            style={{
-              minHeight: '20vh',
-              height: '20vh',
-            }}
-          >
-            <TitleBar />
+          <div className={Styles.title}>
+            <Route render={() => <TitleBar />} />
             <Route render={(props) => <NavigationBar {...props} />} />
           </div>
-          <div className={Styles.content}
-          // style={{
-          //   minHeight: '65vh',
-          //   display: 'flex',
-          //   justifyContent: 'center',
-          //   userSelect: 'none',
-          //   paddingBottom: '2.5rem',
-          // }}
-          >
+          <div className={Styles.content}>
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/about-us" component={AboutUs} exact />
@@ -67,12 +47,8 @@ class App extends React.Component<AppProps> {
               <Route path="/contact" component={Contact} exact />
             </Switch>
           </div>
-          <div className={Styles.signature}
-          // style={{
-          //   minHeight: '10vh',
-          // }}
-          >
-            <Signature />
+          <div className={Styles.end}>
+            <Route render={() => <Signature />} />
           </div>
         </BrowserRouter>
       </div>

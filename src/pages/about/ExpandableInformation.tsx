@@ -2,8 +2,9 @@ import React from 'react'
 import styles from '../about/ExpandableInformation.module.css'
 
 interface ExpandableInformationProps {
-    title?: string
-    information?: string
+    title: string
+    information: string
+    showDelay: number
 }
 
 interface ExpandableInformationState {
@@ -17,6 +18,9 @@ class ExpandableInformation extends React.Component<ExpandableInformationProps, 
         this.state = ({
             showing: false
         })
+        if (this.props.showDelay > 0) {
+            setTimeout(() => { this.setState({ showing: true }) }, this.props.showDelay)
+        }
     }
 
     handleClick() {
@@ -26,7 +30,6 @@ class ExpandableInformation extends React.Component<ExpandableInformationProps, 
     }
 
     render() {
-
         return (
             <div>
                 <div className={this.state.showing ? styles.content_showing : styles.content} onClick={() => { this.handleClick() }}>
