@@ -16,7 +16,7 @@ class Contact extends React.Component<ContactProps> {
                     className={Styles.title}
                 >
                     Please complete the form below and we will be in contact as soon as we can. <br /> <br />
-                    Alternitively you can call or email us directly using the details above
+                    Alternitively you can call or email us directly using the details above.
                 </p>
                 <form action="/action_page.php" className={Styles.form} noValidate autoComplete="on">
                     <div style={{ height: '5vh' }} />

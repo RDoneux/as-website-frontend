@@ -1,7 +1,6 @@
 import React from 'react';
 import { testimony } from '../../assets/data-structures/DataStructures';
 import Styles from './testimony_entry.module.css'
-import LoadingPlaceHolder from '../../assets/testimonies/imageIcon.png'
 
 interface TestimonyEntryProps {
     testimony: testimony
