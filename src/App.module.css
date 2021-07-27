@@ -7,7 +7,7 @@
     min-height    : calc(var(--vh, 1vh) * 100);
     /* background-image: linear-gradient(to left,
             #747474, #d3d3d3) */
-            background: #d3d3d3;
+            background: #e4e2e2;
 }
 
 /* @media screen and (max-width: 400px) {
