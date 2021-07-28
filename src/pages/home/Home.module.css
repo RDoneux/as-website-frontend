@@ -1,12 +1,4 @@
-.container_loading {
-    opacity: 0;
-    display  : flex;
-    min-width: 100%;
-}
-
-.container_loaded {
-    display  : flex;
-    min-width: 100%;
+.container {
 
     -webkit-animation: fadein 2s;
     /* Safari, Chrome and Opera > 12.1 */
@@ -17,29 +9,29 @@
     -o-animation     : fadein 2s;
     /* Opera < 12.1 */
     animation        : fadein 2s;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
 }
 
-.wrapper {
-    width     : 80vw;
-    height    : 50vh;
-    display   : flex;
-    margin    : 20px;
-    overflow-x: hidden;
+.header {
+    width: 50vw;
+    align-self: center;
+    text-align: center;
+    font-style: normal;
+    margin: 0px;
+    font-size: 1.5vw;
 }
 
-.image {
-    min-width : 80vw;
-    height    : 100%;
-    object-fit: cover;
-    transition: 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-@media screen and (orientation: portrait) {
-
-    .wrapper {
-        height: 30vh;
-    }
-
+.text {
+    width: 50vw;
+    align-self: center;
+    text-align: center;
+    font-style: normal;
+    font-size: 1vw;
+    margin-bottom: 100px;
 }
 
 @keyframes fadein {
