@@ -1,14 +1,8 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react';
-import { Link } from 'react-router-dom';
 import Marker from './Marker';
 
-interface FindUsProps {
-    // center: { lat: 59.95, lng: 30.33 }
-    // zoom: 12
-}
-
-class FindUs extends React.Component {
+class FindUs extends React.Component{
 
     static defaultProps = {
         center: { lat: 51.15507646034595, lng: -0.9583754592664105 },
@@ -16,11 +10,10 @@ class FindUs extends React.Component {
     };
 
     render() {
-
         return (
             <div style={{ width: '80%', margin: '30px' }}>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: 'AIzaSyDAcAFhX2ecAhq61W0z8tIpKgy3zj4ucr4' }}
+                    bootstrapURLKeys={{ key: 'AIzaSyBYcFa6tMOStF6I1076ig5an6DVUWwBQxo' }}
                     defaultCenter={FindUs.defaultProps.center}
                     defaultZoom={FindUs.defaultProps.zoom}
                 >
