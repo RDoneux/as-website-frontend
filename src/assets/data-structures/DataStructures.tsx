@@ -5,3 +5,8 @@ export interface testimony {
     image_url: string,
     date: string
 }
+
+export interface image {
+    id: string,
+    image_url: string
+}
