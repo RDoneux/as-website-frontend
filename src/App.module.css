@@ -9,15 +9,15 @@
 }
 
 .title {
-    min-height: 20vh;
-    min-height: calc(var(--vh, 1vh) * 20);
-    height    : 20vh;
-    height    : calc(var(--vh, 1vh) * 20);
+    min-height: 15vh;
+    min-height: calc(var(--vh, 1vh) * 15);
+    height    : 15vh;
+    height    : calc(var(--vh, 1vh) * 15);
 }
 
 .content {
-    min-height     : 75vh;
-    min-height     : calc(var(--vh, 1vh) * 75);
+    min-height     : 80vh;
+    min-height     : calc(var(--vh, 1vh) * 80);
     display        : flex;
     justify-content: center;
     user-select    : none;
@@ -30,11 +30,14 @@
     min-height: calc(var(--vh, 1vh) * 5);
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (orientation: portrait) {
     .title {
-        min-height: 30vh;
-        min-height: calc(var(--vh, 1vh) * 30);
-        height    : 30vh;
-        height    : calc(var(--vh, 1vh) * 30);
+        min-height: 20vh;
+        min-height: calc(var(--vh, 1vh) * 20);
+        height    : 20vh;
+        height    : calc(var(--vh, 1vh) * 20);
     }
+    .content {
+        min-height     : 75vh;
+        min-height     : calc(var(--vh, 1vh) * 75);    }
 }

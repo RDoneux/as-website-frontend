@@ -10,6 +10,7 @@ import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
 import TitleBar from './pages/components/title/TitleBar';
 import Signature from './pages/components/title/Signature';
 import Styles from './App.module.css'
+import FindUs from './pages/location/FindUs';
 
 interface AppProps extends WithStyles<typeof styles> {
 
@@ -45,6 +46,7 @@ class App extends React.Component<AppProps> {
               <Route path="/gallery" component={Gallery} exact />
               <Route path="/testimonies" component={Testimonies} exact />
               <Route path="/contact" component={Contact} exact />
+              <Route path="/find-us" component={FindUs} exact />
             </Switch>
           </div>
           <div className={Styles.end}>

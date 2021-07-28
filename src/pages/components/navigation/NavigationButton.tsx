@@ -6,6 +6,7 @@ interface NavigationButtonProps extends WithStyles<typeof styles> {
     title: string
     path: string
     selected: boolean
+    seperator: boolean
 }
 
 class NavigationButton extends React.Component<NavigationButtonProps> {
@@ -16,12 +17,15 @@ class NavigationButton extends React.Component<NavigationButtonProps> {
             <Link
                 style={{
                     marginLeft: '8px',
-                    marginRight: '8px',
-                    padding: '0px',
+                    marginRight: '0px',
+                    paddingRight: '10px',
+                    marginTop: '0px',
+                    marginBottom: '0px',
                     justifyContent: 'flex-start',
                     textDecoration: 'none',
                     color: 'black',
-                    fontSize: '100%',
+                    fontSize: '2vh',
+                    borderRight: this.props.seperator ? '1px solid black' : '0px solid black',
                 }}
                 href={this.props.path}
                 className={(this.props.selected ? classes.selected : classes.unselected)}

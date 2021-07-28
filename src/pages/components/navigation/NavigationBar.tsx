@@ -13,11 +13,11 @@ class NavgationBar extends React.Component<NavigationBarProps> {
         return (
             <div className={Styles.container}>
                 <div className={Styles.wrapper}>
-                    <NavigationLink title="HOME" path="/" selected={currentPage === "/"} />
-                    <NavigationLink title="ABOUT US" path="/about-us" selected={currentPage === "/about-us"} />
-                    <NavigationLink title="GALLERY" path="/gallery" selected={currentPage === "/gallery"} />
-                    <NavigationLink title="TESTIMONIES" path="/testimonies" selected={currentPage === "/testimonies"} />
-                    <NavigationLink title="CONTACT" path="/contact" selected={currentPage === "/contact"} />
+                    <NavigationLink title="HOME" path="/" selected={currentPage === "/"} seperator />
+                    <NavigationLink title="ABOUT US" path="/about-us" selected={currentPage === "/about-us"} seperator />
+                    <NavigationLink title="GALLERY" path="/gallery" selected={currentPage === "/gallery"} seperator />
+                    <NavigationLink title="TESTIMONIES" path="/testimonies" selected={currentPage === "/testimonies"} seperator />
+                    <NavigationLink title="CONTACT" path="/contact" selected={currentPage === "/contact"} seperator={false} />
                 </div>
             </div>
         )
