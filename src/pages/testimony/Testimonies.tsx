@@ -21,9 +21,7 @@ class Testimonies extends React.Component<TestimoniesProps> {
                         testimony={testimony}
                     />
                 ))}
-                {/* {testimonies.map((testimony: testimony, i) => (
-                    <img style={{ position: 'absolute' }} src={testimony.image_url} alt="" width={"500px"} />
-                ))} */}
+
             </div>
 
         )

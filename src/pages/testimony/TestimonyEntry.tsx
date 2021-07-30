@@ -24,7 +24,7 @@ class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntry
         const loading = this.state.loading
         return (
             <div className={Styles.container}>
-                {/* <div className={Styles.image_wrapper}> */}
+                {/* <div className={Styles.image_wrapper}>
                     <img
                         style={{ objectFit: 'cover' }}
                         className={(loading) ? Styles.image_loading : Styles.image_loaded}
@@ -32,13 +32,21 @@ class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntry
                         src={testimony.image_url}
                         onLoad={() => { this.setState({ loading: false }) }}
                         alt=""
-                    // width={'500vw'}
                     />
-                {/* </div> */}
-                {/* <div> */}
+                </div> */}
+                <img
+                    style={{ objectFit: 'cover' }}
+                    className={(loading) ? Styles.image_loading : Styles.image_loaded}
+                    loading="lazy"
+                    src={testimony.image_url}
+                    onLoad={() => { this.setState({ loading: false }) }}
+                    alt=""
+                />
+                <div>
+
                     <h2 className={Styles.heading}>{testimony.author}</h2>
                     <p className={Styles.paragraph}>"{testimony.text}" - {testimony.date}</p>
-                {/* </div> */}
+                </div>
 
             </div>
         )
