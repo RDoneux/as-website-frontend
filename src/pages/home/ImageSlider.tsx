@@ -20,9 +20,17 @@ class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
             index: 0,
             loaded: false
         }
+
         if (this.props.changeDelay > 0) {
             setTimeout(() => { this.advanceSlide() }, this.props.changeDelay)
         }
+    }
+
+    componentDidMount() {
+        this.props.images.forEach((picture) => {
+            const img = new Image();
+            img.src = picture.image_url;
+        });
     }
 
     advanceSlide() {
@@ -34,6 +42,7 @@ class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
     }
 
     render() {
+
         return (
             <div className={(this.state.loaded) ? Styles.container_loaded : Styles.container_loading}>
                 <div className={Styles.wrapper}>

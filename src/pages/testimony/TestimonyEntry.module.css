@@ -18,7 +18,8 @@
 .image_loading {
     width     : 25vw;
     box-shadow: 3px 3px 3px rgb(63, 63, 63);
-    opacity   : 0%;
+    opacity   : 0;
+    height    : 100%;
     z-index   : 99;
 }
 
@@ -26,7 +27,7 @@
     width     : 25vw;
     height    : 100%;
     box-shadow: 3px 3px 3px rgb(63, 63, 63);
-    opacity   : 100%;
+    opacity   : 1;
     z-index   : 99;
 
     animation: unblur 1s linear;
@@ -99,6 +100,8 @@
         opacity: 1;
     }
 }
+
+
 
 @media screen and (orientation: portrait) {
     .container {

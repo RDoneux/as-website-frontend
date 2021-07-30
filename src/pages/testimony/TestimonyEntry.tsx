@@ -1,6 +1,6 @@
 import React from 'react';
+import Styles from './TestimonyEntry.module.css'
 import { testimony } from '../../assets/data-structures/DataStructures';
-import Styles from './testimony_entry.module.css'
 
 interface TestimonyEntryProps {
     testimony: testimony
@@ -10,7 +10,7 @@ interface TestimonyEntryState {
     loading: boolean
 }
 
-class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntryState> {
+class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntryState>{
 
     constructor(props: TestimonyEntryProps) {
         super(props)
@@ -18,6 +18,7 @@ class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntry
             loading: true
         }
     }
+
 
     render() {
         const testimony = this.props.testimony
@@ -41,7 +42,6 @@ class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntry
             </div>
         )
     }
-
 }
 
 export default TestimonyEntry

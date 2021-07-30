@@ -21,7 +21,7 @@
 
 .wrapper {
     width     : 80vw;
-    height    : 50vh;
+    height    : 60vh;
     display   : flex;
     margin    : 20px;
     overflow-x: hidden;
@@ -37,7 +37,7 @@
 @media screen and (orientation: portrait) {
 
     .wrapper {
-        height: 30vh;
+        height: 45vh;
     }
 
 }

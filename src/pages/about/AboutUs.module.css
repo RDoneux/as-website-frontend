@@ -47,6 +47,27 @@
     animation        : fadein 2s;
 }
 
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main_image {
+        display   : block;
+        min-height: 25vh;
+        min-width : 28vh;
+        align-self: center;
+    }
+
+    .information_wrapper {
+        flex-grow : 1;
+        min-width : 95vw;
+        max-width : 95vw;
+        min-height: 40vh;
+        align-self: center;
+    }
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -79,23 +100,3 @@
     }
 }
 
-@media screen and (orientation: portrait) {
-    .container {
-        flex-direction: column;
-    }
-
-    .main_image {
-        display   : block;
-        min-height: 25vh;
-        min-width : 28vh;
-        align-self: center;
-    }
-
-    .information_wrapper {
-        flex-grow : 1;
-        min-width : 95vw;
-        max-width : 95vw;
-        min-height: 40vh;
-        align-self: center;
-    }
-}
