@@ -18,7 +18,7 @@
 .image_loading {
     width     : 25vw;
     box-shadow: 3px 3px 3px rgb(63, 63, 63);
-    opacity   : 0%;
+    opacity   : 100%;
 }
 
 .image_loaded {
@@ -30,10 +30,10 @@
     animation : unblur 1s linear;
 
     transition: opacity 1s;
-    /* -webkit-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -ms-transition: opacity 1s;
-    -o-animation: opacity 1s; */
+    -o-animation: opacity 1s;
 }
 
 .image_wrapper {
