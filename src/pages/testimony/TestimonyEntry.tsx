@@ -28,7 +28,7 @@ class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntry
                     <img
                         style={{ objectFit: 'cover' }}
                         className={(loading) ? Styles.image_loading : Styles.image_loaded}
-                        loading="lazy"
+                        // loading="lazy"
                         src={testimony.image_url}
                         onLoad={() => { this.setState({ loading: false }) }}
                         alt={testimony.id}
