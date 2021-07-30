@@ -16,10 +16,11 @@ class Testimonies extends React.Component<TestimoniesProps> {
         return (
             <div className={Styles.container}>
                 {testimonies.map((testimony: testimony, i) => (
-                    <TestimonyEntry
-                        key={i}
-                        testimony={testimony}
-                    />
+                    <img src={testimony.image_url} alt="" />
+                    // <TestimonyEntry
+                    //     key={i}
+                    //     testimony={testimony}
+                    // />
                 ))}
             </div>
 

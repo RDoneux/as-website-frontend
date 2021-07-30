@@ -29,8 +29,7 @@ class TestimonyEntry extends React.Component<TestimonyEntryProps, TestimonyEntry
                         style={{ objectFit: 'cover' }}
                         className={(loading) ? Styles.image_loading : Styles.image_loaded}
                         loading="lazy"
-                        // src={testimony.image_url}
-                        src="https://drive.google.com/uc?export=view&id=1EuXD9TwMKmsPHV6De28maeBvTHn0sgty"
+                        src={testimony.image_url}
                         onLoad={() => { this.setState({ loading: false }) }}
                         alt=""
                     // width={'500vw'}
