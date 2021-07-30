@@ -15,8 +15,11 @@ class Testimonies extends React.Component<TestimoniesProps> {
         const testimonies: testimony[] = data
         return (
             <div className={Styles.container}>
-                {testimonies.map((testimony: testimony) => (
-                    <TestimonyEntry testimony={testimony} />
+                {testimonies.map((testimony: testimony, i) => (
+                    <TestimonyEntry
+                        key={i}
+                        testimony={testimony}
+                    />
                 ))}
             </div>
 

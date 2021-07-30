@@ -16,14 +16,14 @@
 }
 
 .image_loading {
-    /* width     : 25vw; */
+    width     : 25vw;
     box-shadow: 3px 3px 3px rgb(63, 63, 63);
     opacity   : 0%;
 }
 
 .image_loaded {
-    /* width     : 25vw; */
-    /* height    : 100%; */
+    width     : 25vw;
+    height    : 100%;
     box-shadow: 3px 3px 3px rgb(63, 63, 63);
     opacity   : 100%;
     z-index   : 99;
@@ -37,10 +37,10 @@
     -o-animation      : opacity 1s;
 }
 
-/* .image_wrapper {
+.image_wrapper {
     width     : 25vw;
     background: lightgray;
-} */
+}
 
 .heading {
     margin       : 1vw;
