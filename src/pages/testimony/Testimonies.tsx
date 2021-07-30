@@ -16,12 +16,14 @@ class Testimonies extends React.Component<TestimoniesProps> {
         return (
             <div className={Styles.container}>
                 {testimonies.map((testimony: testimony, i) => (
-                    <img src={testimony.image_url} alt="" />
-                    // <TestimonyEntry
-                    //     key={i}
-                    //     testimony={testimony}
-                    // />
+                    <TestimonyEntry
+                        key={i}
+                        testimony={testimony}
+                    />
                 ))}
+                {/* {testimonies.map((testimony: testimony, i) => (
+                    <img style={{ position: 'absolute' }} src={testimony.image_url} alt="" width={"500px"} />
+                ))} */}
             </div>
 
         )
