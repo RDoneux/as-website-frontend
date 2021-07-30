@@ -3,6 +3,16 @@
     width  : 95vw;
     height : 30vh;
     margin : 10px;
+
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation   : fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation    : fadein 2s;
+    /* Internet Explorer */
+    -o-animation     : fadein 2s;
+    /* Opera < 12.1 */
+    animation        : fadein 2s;
 }
 
 .image_loading {
@@ -18,13 +28,13 @@
     opacity   : 100%;
     z-index   : 99;
 
-    animation: unblur 1s linear;
+    /* animation: unblur 1s linear;
 
     transition        : opacity 1s;
     -webkit-transition: opacity 1s;
     -moz-transition   : opacity 1s;
     -ms-transition    : opacity 1s;
-    -o-animation      : opacity 1s;
+    -o-animation      : opacity 1s; */
 }
 
 .image_wrapper {
