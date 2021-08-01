@@ -89,7 +89,7 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                             height: '50vh',
                             opacity: this.state.hidden ? '100%' : '0%',
                             transition: '800ms cubic-bezier(0.455, 0.03, 0.515, 0.955)',
-                            
+
                         }}
 
                         disableRipple

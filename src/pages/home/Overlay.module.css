@@ -9,14 +9,14 @@
 }
 
 .wrapper_hidden {
-    width          : 25vw;
+    width          : 20vw;
     height         : 50vh;
     background     : white;
     opacity        : 0%;
     display        : flex;
     flex-direction : column;
     justify-content: center;
-    transform      : translateX(20vw);
+    transform      : translateX(16vw);
     transition     : 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
@@ -56,4 +56,19 @@
     text-align  : start;
     padding-left: 1vw;
     font-size   : 1vw;
+}
+
+@media screen and (orientation: portrait) {
+
+    .wrapper_hidden {
+        height    : 45vh;
+        margin-top: 2.5vh;
+    }
+
+    .wrapper_shown {
+        height    : 45vh;
+        margin-top: 2.5vh;
+
+    }
+
 }
