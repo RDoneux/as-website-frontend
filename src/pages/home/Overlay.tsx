@@ -1,6 +1,5 @@
-import { Link, Button } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 import React from 'react'
-import { isNonNullExpression } from 'typescript'
 import Styles from './Overlay.module.css'
 
 interface OverlayProps {
