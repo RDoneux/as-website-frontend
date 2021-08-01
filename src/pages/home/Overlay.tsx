@@ -40,7 +40,7 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                         className={this.state.hidden ? Styles.link_hidden : Styles.link_shown}
                     >
                         <p
-                            style={{ fontSize: '1vw' }}
+                            className={Styles.link_text}
                         >
                             MOTOR TRADE INDEX
                         </p>
@@ -50,7 +50,7 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                         href={'/find-us'}
                     >
                         <p
-                            style={{ fontSize: '1vw' }}
+                            className={Styles.link_text}
                         >
                             FIND US
                         </p>
@@ -60,7 +60,7 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                         href={'/contact'}
                     >
                         <p
-                            style={{ fontSize: '1vw' }}
+                            className={Styles.link_text}
                         >
                             CONTACT US
                         </p>
@@ -68,9 +68,8 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                     <Button
                         style={{
                             position: 'relative',
-                            width: '100%',
                             opacity: this.state.hidden ? '0%' : '100%',
-                            transition: '800ms cubic-bezier(0.455, 0.03, 0.515, 0.955)'
+                            transition: 'opacity 2s',
                         }}
 
                         disableRipple
@@ -79,17 +78,17 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                         <p
                             className={Styles.link_shown}
                         >
-                            {(this.state.hidden) ? "<<" : ">>"}
+                            {">>"}
                         </p>
                     </Button>
                     <Button
                         style={{
                             position: 'absolute',
-                            width: '100%',
+                            maxWidth: '4vw',
+                            minWidth: '4vw',
                             height: '50vh',
                             opacity: this.state.hidden ? '100%' : '0%',
-                            transition: '800ms cubic-bezier(0.455, 0.03, 0.515, 0.955)',
-
+                            transition: 'opacity 1s',
                         }}
 
                         disableRipple
@@ -98,7 +97,7 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                         <p
                             className={Styles.toggle_hidden}
                         >
-                            {(this.state.hidden) ? "<<" : ">>"}
+                            {"<<"}
                         </p>
                     </Button>
 
