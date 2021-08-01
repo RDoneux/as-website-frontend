@@ -1,6 +1,7 @@
 import React from 'react'
 import { image } from '../../assets/data-structures/DataStructures'
 import Styles from './ImageSlider.module.css'
+import Overlay from './Overlay'
 
 interface ImageSliderProps {
     changeDelay: number
@@ -44,21 +45,27 @@ class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
     render() {
 
         return (
-            <div className={(this.state.loaded) ? Styles.container_loaded : Styles.container_loading}>
-                <div className={Styles.wrapper}>
-                    {this.props.images.map((image: image, i) => (
-                        <img
-                            className={Styles.image}
-                            key={i}
-                            style={{
-                                transform: `translateX(-${(this.state.index * 100)
-                                    }%)`
-                            }}
-                            src={image.image_url}
-                            alt=""
-                            onLoad={() => { this.setState({ loaded: true }) }}
-                        />
-                    ))}
+            <div>
+                <div className={(this.state.loaded) ? Styles.container_loaded : Styles.container_loading}>
+                    <div className={Styles.wrapper}>
+                        {this.props.images.map((image: image, i) => (
+                            <img
+                                className={Styles.image}
+                                key={i}
+                                style={{
+                                    transform: `translateX(-${(this.state.index * 100)
+                                        }%)`
+                                }}
+                                src={image.image_url}
+                                alt=""
+                                onLoad={() => { this.setState({ loaded: true }) }}
+                            />
+                        ))}
+
+                            <Overlay />
+
+                    </div>
+
                 </div>
             </div>
         )
