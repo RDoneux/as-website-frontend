@@ -61,11 +61,8 @@ class ImageSlider extends React.Component<ImageSliderProps, ImageSliderState> {
                                 onLoad={() => { this.setState({ loaded: true }) }}
                             />
                         ))}
-
-                            <Overlay />
-
+                        <Overlay hidden={false} loaded={!this.state.loaded} />
                     </div>
-
                 </div>
             </div>
         )

@@ -4,7 +4,8 @@ import { isNonNullExpression } from 'typescript'
 import Styles from './Overlay.module.css'
 
 interface OverlayProps {
-    hidden?: boolean
+    hidden?: boolean,
+    loaded: boolean
 }
 
 interface OverlayState {
@@ -27,6 +28,9 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
     }
 
     render() {
+        if (this.props.loaded) {
+            return (<div></div>)
+        }
         return (
             <div className={Styles.container}>
                 <div className={this.state.hidden ? Styles.wrapper_hidden : Styles.wrapper_shown}>
