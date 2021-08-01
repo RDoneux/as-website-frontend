@@ -37,38 +37,71 @@ class Overlay extends React.Component<OverlayProps, OverlayState> {
                     <Button
                         href={'http://www.motortradeindex.co.uk/'}
                         target="_blank"
+                        className={this.state.hidden ? Styles.link_hidden : Styles.link_shown}
                     >
                         <p
-                            className={Styles.link_shown}
+                            style={{ fontSize: '1vw' }}
                         >
-                            LISTED IN THE MOTOR TRADE INDEX
+                            MOTOR TRADE INDEX
                         </p>
                     </Button>
                     <Button
+                        className={this.state.hidden ? Styles.link_hidden : Styles.link_shown}
                         href={'/find-us'}
                     >
                         <p
-                            className={Styles.link_shown}
+                            style={{ fontSize: '1vw' }}
                         >
                             FIND US
                         </p>
                     </Button>
                     <Button
+                        className={this.state.hidden ? Styles.link_hidden : Styles.link_shown}
                         href={'/contact'}
                     >
                         <p
-                            className={Styles.link_shown}
+                            style={{ fontSize: '1vw' }}
                         >
                             CONTACT US
                         </p>
                     </Button>
                     <Button
+                        style={{
+                            position: 'relative',
+                            width: '100%',
+                            opacity: this.state.hidden ? '0%' : '100%',
+                            transition: '800ms cubic-bezier(0.455, 0.03, 0.515, 0.955)'
+                        }}
+
+                        disableRipple
                         onClick={() => { this.toggleHidden() }}
                     >
                         <p
-                            className={this.state.hidden ? Styles.link_hidden : Styles.link_shown}
-                        >{(this.state.hidden) ? "<<" : ">>"}</p>
+                            className={Styles.link_shown}
+                        >
+                            {(this.state.hidden) ? "<<" : ">>"}
+                        </p>
                     </Button>
+                    <Button
+                        style={{
+                            position: 'absolute',
+                            width: '100%',
+                            height: '50vh',
+                            opacity: this.state.hidden ? '100%' : '0%',
+                            transition: '800ms cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+                            
+                        }}
+
+                        disableRipple
+                        onClick={() => { this.toggleHidden() }}
+                    >
+                        <p
+                            className={Styles.toggle_hidden}
+                        >
+                            {(this.state.hidden) ? "<<" : ">>"}
+                        </p>
+                    </Button>
+
                 </div>
             </div>
         )
