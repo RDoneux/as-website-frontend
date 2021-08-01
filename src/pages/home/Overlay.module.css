@@ -12,7 +12,7 @@
     width          : 20vw;
     height         : 50vh;
     background     : white;
-    opacity        : 0%;
+    opacity        : 0;
     display        : flex;
     flex-direction : column;
     justify-content: center;
@@ -21,14 +21,14 @@
 }
 
 .wrapper_hidden:hover {
-    opacity: 70%;
+    opacity: 0.7;
 }
 
 .wrapper_shown {
     width          : 20vw;
     height         : 50vh;
     background     : white;
-    opacity        : 70%;
+    opacity        : 0.7;
     display        : flex;
     flex-direction : column;
     justify-content: center;
@@ -45,7 +45,7 @@
 }
 
 .link_shown {
-    opacity   : 100%;
+    opacity   : 1;
     color     : black;
     font-size : 1vw;
     z-index   : 99;
@@ -55,7 +55,7 @@
 
 .toggle_hidden {
     max-width : 4vw;
-    opacity   : 100%;
+    opacity   : 1;
     text-align: center;
     font-size : 1vw;
 }
@@ -69,22 +69,22 @@
     .wrapper_hidden {
         height    : 45vh;
         margin-top: 2.5vh;
-        width: 30vw;
+        width     : 30vw;
 
     }
 
     .wrapper_shown {
         height    : 45vh;
-        width: 30vw;
+        width     : 30vw;
         margin-top: 2.5vh;
     }
 
     .wrapper_hidden {
-        transform      : translateX(26vw);
+        transform: translateX(26vw);
     }
 
     .link_text {
-        font-size: 1vh;
+        font-size : 1vh;
         text-align: center;
     }
 
