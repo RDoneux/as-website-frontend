@@ -9,15 +9,15 @@
 }
 
 .title {
-    min-height: 170px;
-    /* min-height: calc(var(--vh, 1vh) * 18); */
-    height    : 18vh;
-    height    : calc(var(--vh, 1vh) * 18);
+    min-height: 15vh;
+    min-height: calc(var(--vh, 1vh) * 15);
+    height    : 15vh;
+    height    : calc(var(--vh, 1vh) * 15);
 }
 
 .content {
-    min-height     : 78vh;
-    min-height     : calc(var(--vh, 1vh) * 78);
+    min-height     : 80vh;
+    min-height     : calc(var(--vh, 1vh) * 80);
     display        : flex;
     justify-content: center;
     user-select    : none;
@@ -32,8 +32,7 @@
 
 @media screen and (orientation: portrait) {
     .title {
-        min-height: 20vh;
-        min-height: calc(var(--vh, 1vh) * 20);
+        min-height: 200px;
         height    : 20vh;
         height    : calc(var(--vh, 1vh) * 20);
     }
